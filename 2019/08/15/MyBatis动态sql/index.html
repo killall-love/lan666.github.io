@@ -7,26 +7,19 @@
   
   
   
-  <title>强大的Lombok配置Eclipse | 烟花小神</title>
+  <title>MyBatis动态sql | 烟花小神</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="date: 2019/8/9 18:51:23 Lombok能以简单的注解形式来简化java代码，提高开发人员的开发效率。">
+  <meta name="description" content="date: 2019/8/15 0:29:17 MyBatis的强大特性之一便是它的动态 SQL,提高开发人员的开发效率。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="强大的Lombok配置Eclipse">
-<meta property="og:url" content="http://www.lan666.top/2019/08/09/强大的Lombok配置Eclipse/index.html">
+<meta property="og:title" content="MyBatis动态sql">
+<meta property="og:url" content="http://www.lan666.top/2019/08/15/MyBatis动态sql/index.html">
 <meta property="og:site_name" content="烟花小神">
-<meta property="og:description" content="date: 2019/8/9 18:51:23 Lombok能以简单的注解形式来简化java代码，提高开发人员的开发效率。">
+<meta property="og:description" content="date: 2019/8/15 0:29:17 MyBatis的强大特性之一便是它的动态 SQL,提高开发人员的开发效率。">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="https://b2.bmp.ovh/imgs/2019/08/1a224214bb9636f3.png">
-<meta property="og:image" content="https://b2.bmp.ovh/imgs/2019/08/3f1062397b745e8f.png">
-<meta property="og:image" content="https://b2.bmp.ovh/imgs/2019/08/ebe3104882246942.png">
-<meta property="og:image" content="https://b2.bmp.ovh/imgs/2019/08/e214f13355438972.png">
-<meta property="og:image" content="https://b2.bmp.ovh/imgs/2019/08/3d5e7f7121aaf1d7.png">
-<meta property="og:image" content="https://b2.bmp.ovh/imgs/2019/08/1222a9ba22859934.png">
-<meta property="og:updated_time" content="2019-08-09T10:51:56.830Z">
+<meta property="og:updated_time" content="2019-08-14T16:43:05.437Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="强大的Lombok配置Eclipse">
-<meta name="twitter:description" content="date: 2019/8/9 18:51:23 Lombok能以简单的注解形式来简化java代码，提高开发人员的开发效率。">
-<meta name="twitter:image" content="https://b2.bmp.ovh/imgs/2019/08/1a224214bb9636f3.png">
+<meta name="twitter:title" content="MyBatis动态sql">
+<meta name="twitter:description" content="date: 2019/8/15 0:29:17 MyBatis的强大特性之一便是它的动态 SQL,提高开发人员的开发效率。">
   
     <link rel="alternative" href="/atom.xml" title="烟花小神" type="application/atom+xml">
   
@@ -160,11 +153,11 @@
         </header>
     </div>
 </nav>
-      <div class="body-wrap"><article id="post-强大的Lombok配置Eclipse" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-MyBatis动态sql" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a  href="/2019/08/09/强大的Lombok配置Eclipse/" class="article-date">
-      <time datetime="2019-08-09T10:52:13.251Z" itemprop="datePublished">2019-08-09</time>
+      <a  href="/2019/08/15/MyBatis动态sql/" class="article-date">
+      <time datetime="2019-08-14T16:38:29.839Z" itemprop="datePublished">2019-08-15</time>
 </a>
 
     </div>
@@ -178,7 +171,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      强大的Lombok配置Eclipse
+      MyBatis动态sql
     </h1>
   
 
@@ -196,75 +189,13 @@
     <div class="article-entry" itemprop="articleBody">
       
           
-        <h2 id="date-2019-8-9-18-51-23"><a href="#date-2019-8-9-18-51-23" class="headerlink" title="date: 2019/8/9 18:51:23 "></a>date: 2019/8/9 18:51:23 </h2><p><excerpt in="" index="" |="" 首页摘要=""><br>Lombok能以简单的注解形式来简化java代码，提高开发人员的开发效率。<a id="more"></a></excerpt></p>
+        <h2 id="date-2019-8-15-0-29-17"><a href="#date-2019-8-15-0-29-17" class="headerlink" title="date: 2019/8/15 0:29:17 "></a>date: 2019/8/15 0:29:17 </h2><p><excerpt in="" index="" |="" 首页摘要=""><br>MyBatis的强大特性之一便是它的动态 SQL,提高开发人员的开发效率。<a id="more"></a></excerpt></p>
 <p><the rest="" of="" contents="" |="" 余下全文=""><br><!--代码高亮--></the></p>
 <hr>
-<blockquote>
-<h1 id="Lombok背景介绍"><a href="#Lombok背景介绍" class="headerlink" title="Lombok背景介绍"></a>Lombok背景介绍</h1><blockquote>
-<p>Project Lombok makes java a spicier language by adding ‘handlers’ that know how to build and compile simple, boilerplate-free, not-quite-java code.</p>
-</blockquote>
-</blockquote>
-<hr>
-<blockquote>
-<h1 id="Lombok的优缺点"><a href="#Lombok的优缺点" class="headerlink" title="Lombok的优缺点"></a>Lombok的优缺点</h1></blockquote>
-<hr>
-<blockquote>
-<blockquote>
-<p>优点：</p>
-<blockquote>
-<p>能通过注解的形式自动生成构造器、getter/setter、equals、hashcode、toString等方法，提高了一定的开发效率<br>让代码变得简洁，不用过多的去关注相应的方法<br>属性做修改时，也简化了维护为这些属性所生成的getter/setter方法等</p>
-</blockquote>
-</blockquote>
-</blockquote>
-<hr>
-<blockquote>
-<blockquote>
-<p>缺点：</p>
-<blockquote>
-<p>不支持多种参数构造器的重载<br>虽然省去了手动创建getter/setter方法的麻烦，但大大降低了源代码的可读性和完整性，降低了阅读源代码的舒适度</p>
-</blockquote>
-</blockquote>
-</blockquote>
-<hr>
-<blockquote>
-<h1 id="使用见上一篇"><a href="#使用见上一篇" class="headerlink" title="使用见上一篇"></a>使用见上一篇</h1></blockquote>
-<hr>
-<h1 id="1-采坑集合"><a href="#1-采坑集合" class="headerlink" title="1.采坑集合"></a>1.采坑集合</h1><pre><code>今天使用Lombok ，打开Eclipse按照正常的套路
-导入了依赖 更新了项目 项目还是无法使用
-发现属性一直在报警告，这肯定是没成功
-废话不多说直接开始教程
-</code></pre><blockquote>
-<h2 id="strat"><a href="#strat" class="headerlink" title="strat"></a>strat</h2></blockquote>
-<pre><code>打开Eclispe 
-我们先把依赖下载到本地仓库
-然后找到 如图双击打开 lombok-1.18.4.jar
-</code></pre><p><img src="https://b2.bmp.ovh/imgs/2019/08/1a224214bb9636f3.png" alt=""></p>
-<pre><code>选择 Specify Location这个按钮    
-</code></pre><p><img src="https://b2.bmp.ovh/imgs/2019/08/3f1062397b745e8f.png" alt=""></p>
-<pre><code>选择你 Eclispe的路径 点击    select
-</code></pre><p><img src="https://b2.bmp.ovh/imgs/2019/08/ebe3104882246942.png" alt=""></p>
-<pre><code>等待读取你的eclipse 如下 点击 Install
-</code></pre><p><img src="https://b2.bmp.ovh/imgs/2019/08/e214f13355438972.png" alt=""></p>
-<pre><code>会发现多了一个 lombik.jar
-</code></pre><p><img src="https://b2.bmp.ovh/imgs/2019/08/3d5e7f7121aaf1d7.png" alt=""></p>
-<pre><code>打开eclipse.ini 添加
-
--vmargs -javaagent:C:\eclipse\lombok.jar
--javaagent:C:\eclipse\lombok.jar
-
-需要添加 根目录加 lombok.jar  (C:\eclipse\ 替换你的路径)
-到这里就配置值完成了
-</code></pre><h1 id="End"><a href="#End" class="headerlink" title="End"></a>End</h1><pre><code>重启Eclispe
-
-点击 Project 》 Clean 》选择你的项目 点OK
-</code></pre><p><img src="https://b2.bmp.ovh/imgs/2019/08/1222a9ba22859934.png" alt=""></p>
-<pre><code>然后 右键项目 Maven 》 Update Project   更新项目 
-这时候你会发现 实体类里面的属性 正常了  没有警告了
-</code></pre><hr>
-<blockquote>
-<p><strong>2019/8/9 18:51:30 采坑集合 End</strong></p>
-</blockquote>
-<hr>
+<h1 id="1-if-标签"><a href="#1-if-标签" class="headerlink" title="1.if 标签"></a>1.if 标签</h1><pre><code>类似于我们Java中的if  test  里面写条件
+</code></pre><figure class="highlight xml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"></div><div class="line"><span class="tag">&lt;<span class="name">select</span> <span class="attr">id</span>=<span class="string">"findActiveBlogWithTitleLike"</span></span></div><div class="line"><span class="tag">     <span class="attr">resultType</span>=<span class="string">"Blog"</span>&gt;</span></div><div class="line">  SELECT * FROM BLOG</div><div class="line">  WHERE state = ‘ACTIVE’</div><div class="line">  <span class="tag">&lt;<span class="name">if</span> <span class="attr">test</span>=<span class="string">"title != null"</span>&gt;</span></div><div class="line">    AND title like #&#123;title&#125;</div><div class="line">  <span class="tag">&lt;/<span class="name">if</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">select</span>&gt;</span></div></pre></td></tr></table></figure>
+<h1 id="1-choose-when-otherwise-标签"><a href="#1-choose-when-otherwise-标签" class="headerlink" title="1.choose, when, otherwise 标签"></a>1.choose, when, otherwise 标签</h1><pre><code>类似我们的 switch   例如
+</code></pre><figure class="highlight xml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line"></div><div class="line"></div><div class="line"><span class="tag">&lt;<span class="name">select</span> <span class="attr">id</span>=<span class="string">"findActiveBlogLike"</span></span></div><div class="line"><span class="tag">     <span class="attr">resultType</span>=<span class="string">"Blog"</span>&gt;</span></div><div class="line">  SELECT * FROM BLOG WHERE state = ‘ACTIVE’</div><div class="line">  <span class="tag">&lt;<span class="name">choose</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">when</span> <span class="attr">test</span>=<span class="string">"title != null"</span>&gt;</span><span class="comment">&lt;!--选择上 就退出了 后面就不看了 类似 if else if --&gt;</span></div><div class="line">      AND title like #&#123;title&#125; </div><div class="line">    <span class="tag">&lt;/<span class="name">when</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">when</span> <span class="attr">test</span>=<span class="string">"author != null and author.name != null"</span>&gt;</span></div><div class="line">      AND author_name like #&#123;author.name&#125;</div><div class="line">    <span class="tag">&lt;/<span class="name">when</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">otherwise</span>&gt;</span> <span class="comment">&lt;!--如果都没有选择上 就执行这个  类似 java switch 中的 default--&gt;</span></div><div class="line">      AND featured = 1</div><div class="line">    <span class="tag">&lt;/<span class="name">otherwise</span>&gt;</span></div><div class="line">  <span class="tag">&lt;/<span class="name">choose</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">select</span>&gt;</span></div></pre></td></tr></table></figure>
 
       
     </div>
@@ -273,13 +204,13 @@
   
     
     <div class="copyright">
-        <p><span>本文标题:</span><a  href="/2019/08/09/强大的Lombok配置Eclipse/">强大的Lombok配置Eclipse</a></p>
+        <p><span>本文标题:</span><a  href="/2019/08/15/MyBatis动态sql/">MyBatis动态sql</a></p>
         <p><span>文章作者:</span><a  href="/" title="访问 烟花小神博客 的个人博客">烟花小神博客</a></p>
-        <p><span>发布时间:</span>2019年08月09日 - 18时52分</p>
-        <p><span>最后更新:</span>2019年08月09日 - 18时51分</p>
+        <p><span>发布时间:</span>2019年08月15日 - 00时38分</p>
+        <p><span>最后更新:</span>2019年08月15日 - 00时43分</p>
         <p>
-            <span>原始链接:</span><a class="post-url" href="/2019/08/09/强大的Lombok配置Eclipse/" title="强大的Lombok配置Eclipse">http://www.lan666.top/2019/08/09/强大的Lombok配置Eclipse/</a>
-            <span class="copy-path" data-clipboard-text="原文: http://www.lan666.top/2019/08/09/强大的Lombok配置Eclipse/　　作者: 烟花小神博客" title=""></span>
+            <span>原始链接:</span><a class="post-url" href="/2019/08/15/MyBatis动态sql/" title="MyBatis动态sql">http://www.lan666.top/2019/08/15/MyBatis动态sql/</a>
+            <span class="copy-path" data-clipboard-text="原文: http://www.lan666.top/2019/08/15/MyBatis动态sql/　　作者: 烟花小神博客" title=""></span>
         </p>
         <p>
             <span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/cn/" title="中国大陆 (CC BY-NC-SA 3.0 CN)" target = "_blank">"署名-非商用-相同方式共享 3.0"</a> 转载请保留原文链接及作者。
@@ -290,18 +221,9 @@
 
 <nav id="article-nav">
   
-    <a  href="/2019/08/15/MyBatis动态sql/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption"><</strong>
-      <div class="article-nav-title">
-        
-          MyBatis动态sql
-        
-      </div>
-    </a>
   
-  
-    <a  href="/2019/08/09/SpringMVC入门（二）/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">SpringMVC入门（二）</div>
+    <a  href="/2019/08/09/强大的Lombok配置Eclipse/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">强大的Lombok配置Eclipse</div>
       <strong class="article-nav-caption">></strong>
     </a>
   
@@ -313,7 +235,7 @@
 
     <div id="toc" class="toc-article">
     <strong class="toc-title">文章目录</strong>
-    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#date-2019-8-9-18-51-23"><span class="toc-number">1.</span> <span class="toc-text">date: 2019/8/9 18:51:23 </span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Lombok背景介绍"><span class="toc-number"></span> <span class="toc-text">Lombok背景介绍</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Lombok的优缺点"><span class="toc-number"></span> <span class="toc-text">Lombok的优缺点</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#使用见上一篇"><span class="toc-number"></span> <span class="toc-text">使用见上一篇</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#1-采坑集合"><span class="toc-number"></span> <span class="toc-text">1.采坑集合</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#strat"><span class="toc-number">1.</span> <span class="toc-text">strat</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#End"><span class="toc-number"></span> <span class="toc-text">End</span></a>
+    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#date-2019-8-15-0-29-17"><span class="toc-number">1.</span> <span class="toc-text">date: 2019/8/15 0:29:17 </span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#1-if-标签"><span class="toc-number"></span> <span class="toc-text">1.if 标签</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#1-choose-when-otherwise-标签"><span class="toc-number"></span> <span class="toc-text">1.choose, when, otherwise 标签</span></a>
 </div>
 <style>
     .left-col .switch-btn {
@@ -386,13 +308,11 @@
 
     <div class="scroll" id="post-nav-button">
         
-            <a  href="/2019/08/15/MyBatis动态sql/" title="上一篇: MyBatis动态sql">
-                <i class="fa fa-angle-left"></i>
-            </a>
+            <a  href="/" title="回到主页"><i class="fa fa-home"></i></a>
         
         <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
         
-            <a  href="/2019/08/09/SpringMVC入门（二）/" title="下一篇: SpringMVC入门（二）">
+            <a  href="/2019/08/09/强大的Lombok配置Eclipse/" title="下一篇: 强大的Lombok配置Eclipse">
                 <i class="fa fa-angle-right"></i>
             </a>
         
