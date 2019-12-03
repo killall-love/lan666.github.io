@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>蘑订人数在线</title>
+		<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+		 crossorigin="anonymous">
+		<script src="https://cdn.bootcss.com/axios/0.18.0/axios.min.js"></script>
+	</head>
+	<body>
+		<div id="app">
+			<table class="table">
+				<thead>
+					<tr align="center">
+						<th>蘑订在线人数：{{info.data.count}} </th>
+						<th>  By：烟花小神</th>
+					</tr>
+				</thead>
+				<tbody v-for="item in info.data.data">
+					<tr align="center" v-for="(value, key) in item">
+						<td>{{key}} </td>
+						<td> {{value}}</td>
+					</tr>
+				</tbody>
+			</table>
+
+		</div>
+		<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+		<script>
+			axios.defaults.headers.post['Content-Type'] = 'application/x-www-form-urlencoded'; //请求头设置与new URLSearchParams()作用相同，不加的话后端无法成功获取到数据,原因方面，如果想了解，请点击本段代码上方的链接。
+			new Vue({
+				el: "#app",
+				data: {
+					info: null
+				},
+				mounted() {
+					axios
+						.get('http://123.207.53.139:1130/mushroom/init')
+						.then(response => {
+							this.info = response;
+						})
+						.catch(error => {
+							console.log(error)
+						})
+						.finally(() => this.loading = false)
+				}
+			})
+		</script>
+
+	</body>
+</html>
