@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>蘑订用户登录</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<link rel="stylesheet" href="css/mui.min.css" />
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<script src="js/vue.min.js"></script>
+<script src="js/mui.min.js"></script>
+<script src="https://cdn.bootcss.com/axios/0.18.0/axios.min.js"></script>
+</head>
+<body>
+
+<!-- main -->
+<div id="app" class="main-w3layouts wrapper">
+	<h1 align="center" style="color: #FFFFFF;">蘑订登录</h1>
+	<div class="main-agileinfo">
+		<div class="agileits-top"> 
+			<form @submit.prevent="login"> 
+				<input class="text" type="text" v-model="Username" name="Username" placeholder="手机号" required="">
+				<input class="text" type="password" v-model="password" name="password" placeholder="密码" required="">
+				<input type="submit" v-model="text" value="登录">
+			</form>
+		</div>	 
+	</div>	
+	<div class="w3copyright-agile">
+		<p>© 2019 By烟花小神 . All rights <a href="" title="蘑订">Reserved</a></p>
+	</div>
+	<ul class="w3lsg-bubbles">
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+	</ul>
+</div>	
+<script src="js/lottery.js"></script>
+</body>
+</html>
+
