@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>NcOv实时新闻</title>
+		<meta name="description" content="NcOv,病毒,烟花小神,新型冠状病毒 2019-nCoV,nCoV,冠状,冠状病毒,2019冠状病毒,2019病毒,2020冠状病毒,2020病毒">
+		<meta name="keywords" content="NcOv,病毒,烟花小神,新型冠状病毒 2019-nCoV,nCoV,冠状,冠状病毒,2019冠状病毒,2019病毒,2020冠状病毒,2020病毒">
+		<link rel="shortcut icon" type="image/png" href="images/fav.png">
+		<link rel="stylesheet" href="css/mui.min.css" />
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/themify-icons.css">
+		<link rel="stylesheet" href="css/styles.css">
+	</head>
+
+	<body>
+		<div class="wrapper">
+			<div id="content">
+				<div class="container home">
+					<div class="row">
+						<div class="col-md-3">
+
+							<div class="widget-area lochana-box-shadow color-red">
+								<div class="widget-left">
+									<span class="ti-user"></span>
+								</div>
+								<div class="widget-right">
+									<h4 class="wiget-title">死亡</h4>
+									<span class="numeric color-red" id="s"></span>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="widget-area lochana-box-shadow color-blue">
+								<div class="widget-left">
+									<span class="ti-user"></span>
+								</div>
+								<div class="widget-right">
+									<h4 class="wiget-title">确诊</h4>
+									<span class="numeric color-green" id="q"></span>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="widget-area lochana-box-shadow color-yellow">
+								<div class="widget-left">
+									<span class="ti-user"></span>
+								</div>
+								<div class="widget-right">
+									<h4 class="wiget-title">疑似</h4>
+									<span class="numeric color-yellow" id="y"></span>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="widget-area lochana-box-shadow color-green">
+								<div class="widget-left">
+									<span class="ti-user"></span>
+								</div>
+								<div class="widget-right">
+									<h4 class="wiget-title">治愈</h4>
+									<span class="numeric color-yellow" id="z"></span>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-md-12">
+							<div class="widget-area-2 lochana-box-shadow">
+								<h3 class="widget-title"> ↑全国NcOv患者数据统计</h3>
+								<h3 class="widget-title"> ↓全国NcOv患者数据报表</h3>
+								<div id="main" class="chart-home"></div>
+							</div>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-md-12">
+							<div class="widget-area-2 lochana-box-shadow">
+								<h3 class="widget-title">↓全国NcOv患者实时数据</h3>
+								<div class="table-responsive">
+									<table class="table table-bordered table-striped">
+										<thead>
+											<tr>
+												<th>时间</th>
+												<th>标题</th>
+												<th>内容</th>
+												<th>来源</th>
+											</tr>
+										</thead>
+										<tbody id="table">
+										</tbody>
+									</table>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="container">
+					<div class="d-sm-flex justify-content-center">
+						<span class="text-muted text-center d-block d-sm-inline-block">Copyright © 2020 <a href="http://lan666.top" target="_blank">烟花小神</a>.
+							All rights reserved.</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="js/mui.min.js"></script>
+		<script src="js/jquery-3.2.1.min.js"></script>
+		<script src="js/echarts.min.js"></script>
+		<script src="js/inti.js"></script>
+	</body>
+
+</html>
