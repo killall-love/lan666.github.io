@@ -24,7 +24,7 @@
 <meta property="og:image" content="https://img30.360buyimg.com/pop/jfs/t1/187897/10/21703/82037/623715adE8ae7a3ee/74e765765f16b7c5.png">
 <meta property="og:image" content="https://img30.360buyimg.com/pop/jfs/t1/119960/7/23107/104404/62371917E683e6287/db054e0c639d828a.png">
 <meta property="og:image" content="https://img30.360buyimg.com/pop/jfs/t1/110359/18/27377/89032/62371926Ecb5116c1/a0fdcd6ce1bc1061.png">
-<meta property="og:updated_time" content="2022-03-20T12:31:52.767Z">
+<meta property="og:updated_time" content="2022-03-20T12:39:48.834Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="实现微信机器人自动收发消息">
 <meta name="twitter:description" content="date: 2022/03/20 20:30:21     微信8.0.20 自动收发消息">
@@ -210,7 +210,7 @@
 </code></pre><p><img src="https://img30.360buyimg.com/pop/jfs/t1/106377/10/25879/179067/623707ebE594cdf53/77a8245d39b99902.png" alt=""></p>
 <hr>
 <h2 id="自动发送消息"><a href="#自动发送消息" class="headerlink" title="自动发送消息"></a>自动发送消息</h2><blockquote>
-<p><strong>寻找Hook点</strong></p>
+<p><strong>开工</strong></p>
 </blockquote>
 <pre><code>1. 开工ddms
 2. 首先得完成一次消息的发送事件 然后一步一步定位
@@ -259,15 +259,21 @@
 </blockquote>
 <hr>
 <blockquote>
-<p><strong>代码Hook</strong></p>
-<p>拿到实例</p>
-<p>实例.a(n,0);</p>
-<p>new n(talker,content,1,0)</p>
-<p>看图五我们知道 b(n) == a(n,0)</p>
-<p>实例.b(new n(talker,content,1,0));</p>
-<p>发送成功<br>talker 发送人 content 内容</p>
+<p><strong>代码</strong></p>
 </blockquote>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line"></div><div class="line"></div><div class="line">callMethod(</div><div class="line">               callStaticMethod(</div><div class="line">                       findClass(<span class="string">"com.tencent.mm.model.bi"</span>, clazz)</div><div class="line">                       , <span class="string">"bfH"</span></div><div class="line">               )</div><div class="line">               , <span class="string">"b"</span></div><div class="line">               ,newInstance(</div><div class="line">                       findClass(<span class="string">"com.tencent.mm.modelmulti.n"</span>, clazz)</div><div class="line">                       , talker</div><div class="line">                       , content</div><div class="line">                       ,<span class="number">1</span></div><div class="line">                       ,<span class="number">0</span></div><div class="line">               )</div><div class="line">       );</div></pre></td></tr></table></figure>
+<pre><code>拿到实例
+
+实例.a(n,0);
+
+new n(talker,content,1,0)
+
+看图五我们知道 b(n) == a(n,0)
+
+实例.b(new n(talker,content,1,0));
+
+发送成功
+talker 发送人 content 内容
+</code></pre><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line"></div><div class="line"></div><div class="line">callMethod(</div><div class="line">               callStaticMethod(</div><div class="line">                       findClass(<span class="string">"com.tencent.mm.model.bi"</span>, clazz)</div><div class="line">                       , <span class="string">"bfH"</span></div><div class="line">               )</div><div class="line">               , <span class="string">"b"</span></div><div class="line">               ,newInstance(</div><div class="line">                       findClass(<span class="string">"com.tencent.mm.modelmulti.n"</span>, clazz)</div><div class="line">                       , talker</div><div class="line">                       , content</div><div class="line">                       ,<span class="number">1</span></div><div class="line">                       ,<span class="number">0</span></div><div class="line">               )</div><div class="line">       );</div></pre></td></tr></table></figure>
 <hr>
 <h2 id="整合聊天机器人"><a href="#整合聊天机器人" class="headerlink" title="整合聊天机器人"></a>整合聊天机器人</h2><blockquote>
 <p><strong>就是个聊天机器人了（思路）</strong></p>
@@ -287,7 +293,7 @@
         <p><span>本文标题:</span><a  href="/2022/03/20/Hook微信机器人自动发消息/">实现微信机器人自动收发消息</a></p>
         <p><span>文章作者:</span><a  href="/" title="访问 烟花小神博客 的个人博客">烟花小神博客</a></p>
         <p><span>发布时间:</span>2022年03月20日 - 18时47分</p>
-        <p><span>最后更新:</span>2022年03月20日 - 20时31分</p>
+        <p><span>最后更新:</span>2022年03月20日 - 20时39分</p>
         <p>
             <span>原始链接:</span><a class="post-url" href="/2022/03/20/Hook微信机器人自动发消息/" title="实现微信机器人自动收发消息">http://www.lan666.top/2022/03/20/Hook微信机器人自动发消息/</a>
             <span class="copy-path" data-clipboard-text="原文: http://www.lan666.top/2022/03/20/Hook微信机器人自动发消息/　　作者: 烟花小神博客" title=""></span>
