@@ -7,19 +7,28 @@
   
   
   
-  <title>JAVA点名 | 烟花小神</title>
+  <title>实现微信机器人自动收发消息 | 烟花小神</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="date: 2017利用JAVA实现随机点名.">
+  <meta name="description" content="date: 2022/03/20 20:30:21     微信8.0.20 自动收发消息">
 <meta property="og:type" content="article">
-<meta property="og:title" content="JAVA点名">
-<meta property="og:url" content="http://www.lan666.top/2017/10/30/JAVA随机点名/index.html">
+<meta property="og:title" content="实现微信机器人自动收发消息">
+<meta property="og:url" content="http://www.lan666.top/2022/03/20/Hook微信机器人自动发消息/index.html">
 <meta property="og:site_name" content="烟花小神">
-<meta property="og:description" content="date: 2017利用JAVA实现随机点名.">
+<meta property="og:description" content="date: 2022/03/20 20:30:21     微信8.0.20 自动收发消息">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-11-05T16:28:05.395Z">
+<meta property="og:image" content="https://img30.360buyimg.com/pop/jfs/t1/106377/10/25879/179067/623707ebE594cdf53/77a8245d39b99902.png">
+<meta property="og:image" content="https://img30.360buyimg.com/pop/jfs/t1/123108/6/24474/61751/62371449E3f147fe0/682a53d4f00009cf.png">
+<meta property="og:image" content="https://img30.360buyimg.com/pop/jfs/t1/185667/20/21860/24045/62371571E7205bd5f/4a95ed7ce6ef20a0.png">
+<meta property="og:image" content="https://img30.360buyimg.com/pop/jfs/t1/97789/9/25209/120649/6237159aE15a35b72/99cf95005543602e.png">
+<meta property="og:image" content="https://img30.360buyimg.com/pop/jfs/t1/120369/24/23445/18885/623715a1Ea8d45f77/b6def62e160c8d43.png">
+<meta property="og:image" content="https://img30.360buyimg.com/pop/jfs/t1/187897/10/21703/82037/623715adE8ae7a3ee/74e765765f16b7c5.png">
+<meta property="og:image" content="https://img30.360buyimg.com/pop/jfs/t1/119960/7/23107/104404/62371917E683e6287/db054e0c639d828a.png">
+<meta property="og:image" content="https://img30.360buyimg.com/pop/jfs/t1/110359/18/27377/89032/62371926Ecb5116c1/a0fdcd6ce1bc1061.png">
+<meta property="og:updated_time" content="2022-03-20T12:31:52.767Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="JAVA点名">
-<meta name="twitter:description" content="date: 2017利用JAVA实现随机点名.">
+<meta name="twitter:title" content="实现微信机器人自动收发消息">
+<meta name="twitter:description" content="date: 2022/03/20 20:30:21     微信8.0.20 自动收发消息">
+<meta name="twitter:image" content="https://img30.360buyimg.com/pop/jfs/t1/106377/10/25879/179067/623707ebE594cdf53/77a8245d39b99902.png">
   
     <link rel="alternative" href="/atom.xml" title="烟花小神" type="application/atom+xml">
   
@@ -147,11 +156,11 @@
         </header>
     </div>
 </nav>
-      <div class="body-wrap"><article id="post-JAVA随机点名" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-Hook微信机器人自动发消息" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a  href="/2017/10/30/JAVA随机点名/" class="article-date">
-      <time datetime="2017-10-30T12:56:05.981Z" itemprop="datePublished">2017-10-30</time>
+      <a  href="/2022/03/20/Hook微信机器人自动发消息/" class="article-date">
+      <time datetime="2022-03-20T10:47:45.051Z" itemprop="datePublished">2022-03-20</time>
 </a>
 
     </div>
@@ -165,7 +174,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      JAVA点名
+      实现微信机器人自动收发消息
     </h1>
   
 
@@ -183,9 +192,91 @@
     <div class="article-entry" itemprop="articleBody">
       
           
-        <h2 id="date-2017"><a href="#date-2017" class="headerlink" title="date: 2017"></a>date: 2017</h2><p><excerpt in="" index="" |="" 首页摘要=""><br>利用JAVA实现随机点名.<a id="more"></a></excerpt></p>
-<p><the rest="" of="" contents="" |="" 余下全文=""><br><!--代码高亮--><br><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div></pre></td><td class="code"><pre><div class="line"></div><div class="line"><span class="keyword">import</span> java.util.*;</div><div class="line"></div><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Main</span></span></div><div class="line"><span class="class"></span>&#123;</div><div class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span></span></div><div class="line"><span class="function">	</span>&#123;</div><div class="line">		</div><div class="line">		<span class="comment">//输入回答的人数</span></div><div class="line">		System.out.print(<span class="string">"请输入需要回答问题的人数："</span>);</div><div class="line">		<span class="comment">//获取到需要回答的人数</span></div><div class="line">		Scanner scanner=<span class="keyword">new</span> Scanner(System.in);</div><div class="line">		<span class="comment">//赋值给int类型的 number</span></div><div class="line">		<span class="keyword">int</span> number=scanner.nextInt();</div><div class="line">		<span class="comment">//传入人数number</span></div><div class="line">		Start(number);</div><div class="line">	&#125;</div><div class="line"></div><div class="line"></div><div class="line"></div><div class="line">	<span class="function"><span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">Start</span><span class="params">(<span class="keyword">int</span> ii)</span></span>&#123;</div><div class="line">		</div><div class="line">		<span class="comment">//定义一个数组</span></div><div class="line">		String[] array=&#123;<span class="string">"大佬"</span>,<span class="string">"小白"</span>,<span class="string">"大神"</span>,<span class="string">"烟花小神"</span>,<span class="string">"小兰"</span>,<span class="string">"我"</span>,<span class="string">"他"</span>,<span class="string">"你"</span>,<span class="string">"她"</span>,<span class="string">"谁"</span>,<span class="string">"数组"</span>,<span class="string">"名字难想"</span>&#125;;</div><div class="line">		<span class="comment">//随机对象 r</span></div><div class="line">		Random r = <span class="keyword">new</span> Random();</div><div class="line">		<span class="keyword">int</span> i;</div><div class="line">		<span class="comment">//循环输出</span></div><div class="line">		<span class="keyword">for</span>(i=<span class="number">0</span>;i&lt;ii;i++)&#123;</div><div class="line">			<span class="comment">//随机获取到数组的值</span></div><div class="line">			<span class="keyword">int</span> f = r.nextInt(array.length);</div><div class="line">			<span class="comment">//把随机人赋值给str</span></div><div class="line">			String str=array[f];</div><div class="line">			System.out.println(<span class="string">"请："</span>+<span class="string">"\""</span>+str+<span class="string">"\""</span>+<span class="string">"回答问题"</span>);</div><div class="line">		&#125;</div><div class="line"></div><div class="line">	&#125;</div><div class="line"></div><div class="line">&#125;</div></pre></td></tr></table></figure></the></p>
-
+        <h2 id="date-2022-03-20-20-30-21"><a href="#date-2022-03-20-20-30-21" class="headerlink" title="date: 2022/03/20 20:30:21     "></a>date: 2022/03/20 20:30:21     </h2><p><excerpt in="" index="" |="" 首页摘要=""><br>微信8.0.20 自动收发消息 <a id="more"></a></excerpt></p>
+<p><the rest="" of="" contents="" |="" 余下全文=""><br><!--代码高亮--></the></p>
+<hr>
+<h2 id="他是干啥的？？？"><a href="#他是干啥的？？？" class="headerlink" title="他是干啥的？？？"></a>他是干啥的？？？</h2><blockquote>
+<p><strong>没啥用就是玩！</strong></p>
+</blockquote>
+<h2 id="拦截微信聊天所有的文字信息"><a href="#拦截微信聊天所有的文字信息" class="headerlink" title="拦截微信聊天所有的文字信息"></a>拦截微信聊天所有的文字信息</h2><pre><code>如图所示
+1. 获取到聊天记录本地存储的代码
+2. curd 对吧 肯定找 insert 
+3. 入参 String String ContentValues
+4. 第一个是 表名 最后 一个是入库的参数
+5. 直接把 ContentValues打印 发现是一些参数 
+6. 但是你会发现别人发你的消息，你也其中也看到了
+7. 那么你都看到了？取出来 这不就拦截到了？
+8. 至于说要干什么。想干什么。怎么干 ....
+</code></pre><p><img src="https://img30.360buyimg.com/pop/jfs/t1/106377/10/25879/179067/623707ebE594cdf53/77a8245d39b99902.png" alt=""></p>
+<hr>
+<h2 id="自动发送消息"><a href="#自动发送消息" class="headerlink" title="自动发送消息"></a>自动发送消息</h2><blockquote>
+<p><strong>寻找Hook点</strong></p>
+</blockquote>
+<pre><code>1. 开工ddms
+2. 首先得完成一次消息的发送事件 然后一步一步定位
+3. bAX方法的入参是String 那肯定就是输入内容发送
+4. 后面的代码就是一步一步一步的调用
+5. 图 4 图5 分别是对应的a方法对象和a方法的参数
+6. 通过以上发现消息发送成功了但是问题来了 它只发送成功了 对方并没有收到！！！
+7. 看图6 图7  ((af) bj.this.hCk.cp(af.class)).g((n) t);
+8. 这时候 我们对比 a 方法的参数和 g方法的参数 参数不同但是我们会发现他们都继承了 abstract class p 这类
+9. 那么把参数n 传递到 a方法呢？
+10. success 这不就ok了
+</code></pre><hr>
+<blockquote>
+<p>1</p>
+<p><img src="https://img30.360buyimg.com/pop/jfs/t1/123108/6/24474/61751/62371449E3f147fe0/682a53d4f00009cf.png" alt=""></p>
+</blockquote>
+<hr>
+<blockquote>
+<p>2</p>
+<p><img src="https://img30.360buyimg.com/pop/jfs/t1/185667/20/21860/24045/62371571E7205bd5f/4a95ed7ce6ef20a0.png" alt=""></p>
+</blockquote>
+<hr>
+<blockquote>
+<p>3</p>
+<p><img src="https://img30.360buyimg.com/pop/jfs/t1/97789/9/25209/120649/6237159aE15a35b72/99cf95005543602e.png" alt=""></p>
+</blockquote>
+<hr>
+<blockquote>
+<p>4</p>
+<p><img src="https://img30.360buyimg.com/pop/jfs/t1/120369/24/23445/18885/623715a1Ea8d45f77/b6def62e160c8d43.png" alt=""></p>
+</blockquote>
+<hr>
+<blockquote>
+<p>5</p>
+<p><img src="https://img30.360buyimg.com/pop/jfs/t1/187897/10/21703/82037/623715adE8ae7a3ee/74e765765f16b7c5.png" alt=""></p>
+</blockquote>
+<hr>
+<blockquote>
+<p>6</p>
+<p><img src="https://img30.360buyimg.com/pop/jfs/t1/119960/7/23107/104404/62371917E683e6287/db054e0c639d828a.png" alt=""></p>
+</blockquote>
+<hr>
+<blockquote>
+<p>7</p>
+<p><img src="https://img30.360buyimg.com/pop/jfs/t1/110359/18/27377/89032/62371926Ecb5116c1/a0fdcd6ce1bc1061.png" alt=""></p>
+</blockquote>
+<hr>
+<blockquote>
+<p><strong>代码Hook</strong></p>
+<p>拿到实例</p>
+<p>实例.a(n,0);</p>
+<p>new n(talker,content,1,0)</p>
+<p>看图五我们知道 b(n) == a(n,0)</p>
+<p>实例.b(new n(talker,content,1,0));</p>
+<p>发送成功<br>talker 发送人 content 内容</p>
+</blockquote>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line"></div><div class="line"></div><div class="line">callMethod(</div><div class="line">               callStaticMethod(</div><div class="line">                       findClass(<span class="string">"com.tencent.mm.model.bi"</span>, clazz)</div><div class="line">                       , <span class="string">"bfH"</span></div><div class="line">               )</div><div class="line">               , <span class="string">"b"</span></div><div class="line">               ,newInstance(</div><div class="line">                       findClass(<span class="string">"com.tencent.mm.modelmulti.n"</span>, clazz)</div><div class="line">                       , talker</div><div class="line">                       , content</div><div class="line">                       ,<span class="number">1</span></div><div class="line">                       ,<span class="number">0</span></div><div class="line">               )</div><div class="line">       );</div></pre></td></tr></table></figure>
+<hr>
+<h2 id="整合聊天机器人"><a href="#整合聊天机器人" class="headerlink" title="整合聊天机器人"></a>整合聊天机器人</h2><blockquote>
+<p><strong>就是个聊天机器人了（思路）</strong></p>
+</blockquote>
+<pre><code>1. 我们在拦截信息的时候把消息通过http请求发送给服务端
+2. 服务端对消息处理后
+3. 响应给我们
+4. 调用发送 是不是一个完整的流程就出来了
+</code></pre>
       
     </div>
     
@@ -193,13 +284,13 @@
   
     
     <div class="copyright">
-        <p><span>本文标题:</span><a  href="/2017/10/30/JAVA随机点名/">JAVA点名</a></p>
+        <p><span>本文标题:</span><a  href="/2022/03/20/Hook微信机器人自动发消息/">实现微信机器人自动收发消息</a></p>
         <p><span>文章作者:</span><a  href="/" title="访问 烟花小神博客 的个人博客">烟花小神博客</a></p>
-        <p><span>发布时间:</span>2017年10月30日 - 20时56分</p>
-        <p><span>最后更新:</span>2017年11月06日 - 00时28分</p>
+        <p><span>发布时间:</span>2022年03月20日 - 18时47分</p>
+        <p><span>最后更新:</span>2022年03月20日 - 20时31分</p>
         <p>
-            <span>原始链接:</span><a class="post-url" href="/2017/10/30/JAVA随机点名/" title="JAVA点名">http://www.lan666.top/2017/10/30/JAVA随机点名/</a>
-            <span class="copy-path" data-clipboard-text="原文: http://www.lan666.top/2017/10/30/JAVA随机点名/　　作者: 烟花小神博客" title=""></span>
+            <span>原始链接:</span><a class="post-url" href="/2022/03/20/Hook微信机器人自动发消息/" title="实现微信机器人自动收发消息">http://www.lan666.top/2022/03/20/Hook微信机器人自动发消息/</a>
+            <span class="copy-path" data-clipboard-text="原文: http://www.lan666.top/2022/03/20/Hook微信机器人自动发消息/　　作者: 烟花小神博客" title=""></span>
         </p>
         <p>
             <span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/cn/" title="中国大陆 (CC BY-NC-SA 3.0 CN)" target = "_blank">"署名-非商用-相同方式共享 3.0"</a> 转载请保留原文链接及作者。
@@ -210,18 +301,9 @@
 
 <nav id="article-nav">
   
-    <a  href="/2017/11/26/java io/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption"><</strong>
-      <div class="article-nav-title">
-        
-          java IO 文件操作
-        
-      </div>
-    </a>
   
-  
-    <a  href="/2017/09/04/进制转换/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">进制转换</div>
+    <a  href="/2019/08/18/SSM整合/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">SSM整合</div>
       <strong class="article-nav-caption">></strong>
     </a>
   
@@ -233,7 +315,7 @@
 
     <div id="toc" class="toc-article">
     <strong class="toc-title">文章目录</strong>
-    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#date-2017"><span class="toc-number">1.</span> <span class="toc-text">date: 2017</span></a></li></ol>
+    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#date-2022-03-20-20-30-21"><span class="toc-number">1.</span> <span class="toc-text">date: 2022/03/20 20:30:21     </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#他是干啥的？？？"><span class="toc-number">2.</span> <span class="toc-text">他是干啥的？？？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#拦截微信聊天所有的文字信息"><span class="toc-number">3.</span> <span class="toc-text">拦截微信聊天所有的文字信息</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#自动发送消息"><span class="toc-number">4.</span> <span class="toc-text">自动发送消息</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#整合聊天机器人"><span class="toc-number">5.</span> <span class="toc-text">整合聊天机器人</span></a></li></ol>
 </div>
 <style>
     .left-col .switch-btn {
@@ -306,13 +388,11 @@
 
     <div class="scroll" id="post-nav-button">
         
-            <a  href="/2017/11/26/java io/" title="上一篇: java IO 文件操作">
-                <i class="fa fa-angle-left"></i>
-            </a>
+            <a  href="/" title="回到主页"><i class="fa fa-home"></i></a>
         
         <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
         
-            <a  href="/2017/09/04/进制转换/" title="下一篇: 进制转换">
+            <a  href="/2019/08/18/SSM整合/" title="下一篇: SSM整合">
                 <i class="fa fa-angle-right"></i>
             </a>
         
